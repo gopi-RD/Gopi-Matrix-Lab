@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+}
+.bg-home-container{
+     width: 100%; 
+     min-height: 100vh;   
+    background-color: #00161D;                                                                                  
+}
+.home-container{
+    padding: 20px 10px 10px 10px;  
+}
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-section-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+.invest-btn{
+    display: none;
+}
+.banner-heading{
+max-width: 175px;
+font-family: "Space Grotesk";
+font-size: 35.86px;
+font-weight: 300;
+text-align: center;
+color: var(--color-white-solid, #FFFFFF);
+
+}
+
+.innovation-button{
+padding: 2px 14px 2px 14px;
+border-radius: 56px;
+background: var(--color-cyan-85, #B0F9FF);
+font-family: var(--fontfamilyFont1);
+font-size: 35.86px;
+font-weight: 300;
+line-height: var(--lineheight40);
+letter-spacing: var(--letterspacing-072);
+color: var(--color-cyan-11, #0B2A2D);
+
+
+
+}
+.banner-text{
+font-family: var(--fontfamilyFont1);
+font-size: var(--fontsize20);
+font-weight: 400;
+line-height: var(--lineheight28);
+text-align: center;
+color: var(--color-cyan-8570, #B0FAFFB2);
+max-width: 350px;
+
+}
+.open-dapp-button{
+padding: 12px 24px 12px 24px;
+border-radius: 12px;
+background: var(--color-grey-90, #CDFCFF);
+box-shadow: 0px 0px 1px 1px #4CDDFD inset;
+
+box-shadow: 0px 1px 1px 0px #4CDDFD inset;
+
+box-shadow: 0px 0px 4px 2px #FFFFFF1F inset;
+
+box-shadow: 0px -8px 16px -4px #37C5E599 inset;
+
+box-shadow: 0px 6px 20px 0px #37C5E51F;
+
+box-shadow: 0px 4px 12px 0px #37C5E51F;
+
+box-shadow: 0px 4px 6px 0px #37C5E51F;
+
+box-shadow: 0px 1px 4px 0px #37C5E51F;
+font-family: var(--fontfamilyFont1);
+font-size: var(--fontsize16);
+font-weight: 500;
+line-height: var(--fontsize20);
+letter-spacing: var(--letterspacing-032);
+text-align: center;
+color: var(--color-cyan-11, #0B2A2D);
+}
+
+
+@media (min-width: 768px){
+    .home-container{
+        background-image: url("https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729058292/new/uirzjveiwhmpxgydd1rx.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+   
+
+    .innovation-button{
+        display: none;
+    }
+    .banner-heading{
+        max-width: 700px;
+        font-family:"Play";
+        font-size: 72px;
+        font-weight: 500;
+        text-align: center;
+        }
+    .invest-btn{
+        padding: 4px 20px 4px 20px;
+        border-radius: 56px;
+        background-color: #B0F9FF;
+        font-family:"Play";
+        font-size:72px;
+        font-weight: 500;
+        text-align: center;
+        width:419px;
+        height:84px;
+        display: block;
+        color: #0B2A2D;
+    }
+
+    .banner-text{
+    font-size:20px;
+    font-weight: 400;
+    max-width: 500px;
+    }
+
+    .open-dapp-button{
+    width:131px;
+    height:44px;
+    padding: 12px 24px 12px 24px;
+    border-radius: 12px;
+    background: #8BF9E803;
+    box-shadow: 0px 0px 40px 0px #8BF9E833 inset;
+    backdrop-filter: blur(7.5px);
+    font-family: "Play";
+    font-size:16px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+
+    }
+}
+
+
+/* Features */
+
+.our-feature-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-features-container{
+width:390px;
+height:1,687px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+
+}
+
+.our-feature-title{
+font-family:"Play";
+font-size:40px;
+font-weight: 500;
+text-align: center;
+color:#FFFFFF;
+}
+.feature-card-container{
+border-radius: 16px;
+background: var(--color-cyan-1270, #0C2B2FB2);
+text-align: center;
+width: 350px;
+height:348px;
+padding:24px ;
+
+}
+.trade-optimizer-img{
+    width: 120px;
+    height: 118px;
+}
+.trade-optimizer-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+
+}
+.trade-optimizer-title{
+font-family:"Play";
+font-size: 22px;
+font-weight: 500;
+color: var(--color-white-solid, #FFFFFF);
+margin-bottom: 0px;
+}
+
+.trade-optimizer-text{
+font-family:"Play";
+font-size: 16px;
+font-weight: 400;
+color:var(--color-cyan-8570, #B0FAFFB2);
+text-align: center;
+max-width: 230px;
+}
+.markrt-insights-container{
+    width:350px;
+    height: 198px;
+    display: flex;
+    border-radius: 16px;
+    background: var(--color-cyan-1270, #0C2B2FB2);
+    margin-bottom: 20px;
+    padding:0px 0px 0px 24px ;
+
+
+
+}
+.markrt-insights-title{
+font-family: "Play";
+font-size:22px;
+font-weight: 500;
+color: var(--color-white-solid, #FFFFFF);
+}
+.markrt-insights-text{
+font-family:"Play";
+font-size:16px;
+font-weight: 400;
+color: var(--color-cyan-8570, #B0FAFFB2);
+
+}
+.markrt-insights-img{
+    height: 100%;
+}
+
+.risk-guard-container{
+width:350px;
+border-radius: 16px;
+background: var(--color-cyan-1270, #0C2B2FB2);
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px;
+}
+.risk-guard-title{
+font-family: "Play";
+font-size:22px;
+font-weight: 500;
+text-align: center;
+color: #fff;
+}
+.risk-guard-text{
+    font-family: "Play";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-cyan-8570, #B0FAFFB2);
+    max-width: 286px;
+    text-align: center;
+    
+}
+.risk-guard-img{
+    width:236px;
+    height: 236px;
+    margin-top: 20px;
+}
+.portfolio-container{
+width: 350px;
+border-radius: 16px;
+border: 1px solid #0F373C;
+background: var(--color-cyan-1270, #0C2B2FB2);
+display:flex;
+margin-bottom: 20px;
+padding: 24px 0px 0px 24px;
+}
+.portfolio-img{
+width: 99.9px;
+height: 100.25px;
+transform: rotate(26 deg);
+align-self: flex-end;
+}
+.opportunity-scout-container{
+width: 350px;
+border-radius: 16px;
+border: 1px solid #0F373C;
+background: var(--color-cyan-1270, #0C2B2FB2);
+margin-bottom: 20px;
+padding: 24px 0px 0px 24px;
+display:flex;
+flex-direction: column;
+}
+.opportunity-description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 302px;
+}
+.opportunity-scout-img{
+    width: 120px;
+    align-self: flex-end;
+}
+
+.empty-container-lg{
+    display: none;
+}
+
+/* Feature styles in lg device  */
+
+@media (min-width: 768px){
+    .our-feature-top-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .our-feature-title{
+        display: none;
+    }
+    .our-features-container{
+        width: 280px;
+        margin: 0px;
+    }
+    .feature-card-container{
+        width: 280px;
+        height: 504px;
+        border-radius:56px 16px 16px 16px;
+        border:1px solid #0F373C;
+        padding:72px 37px 37px 37px;
+    }
+    .trade-optimizer-container{
+        margin-top: 40px;
+    }
+    .trade-optimizer-title{
+    font-size:22px;
+    font-weight: 500;
+    text-align: center;
+
+    }
+    .markrt-and-empty-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 10px;
+        
+
+    }
+
+    .markrt-insights-container{
+    width:608px;
+    height:198px;
+    padding: 32px 0px 0px 32px;
+    border-radius: 16px;
+    background: var(--color-cyan-1270, #0C2B2FB2);
+    margin-bottom:0px;
+
+    }
+    .markrt-insights-text{
+        max-width: 360px;
+    }
+    .empty-container-lg{
+        display:block;
+        width: 608px;
+        height: 290px;
+        border-radius: 16px;
+        background: var(--color-cyan-1270, #0C2B2FB2);
+        box-shadow: 0px 1px 25px 0px #1DCEF240 inset;
+        margin-top: 10px;
+
+    }
+
+    .risk-guard-container{
+    width: 280px;
+    height: 504px;
+    border-radius: 16px 56px 16px 16px;
+    border:1px solid #0F373C;
+    margin: 0px;
+    }
+    
+    .portfolio-and-opportunity-container{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .portfolio-container{
+    width:446px;
+    height:240px;
+    padding:32px;
+    border-radius:16px 16px 16px 56px;
+    background: var(--color-cyan-1270, #0C2B2FB2);
+    margin-right: 10px;
+
+    }
+    .portfolio-card-container{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+
+
+    }
+
+    .portfolio-img{
+        display:none;
+    }
+
+    .opportunity-scout-container{
+        width:738px;
+        height: 240px;
+        padding: 32px;
+        border-radius: 16px 16px 56px 16px;
+        background: var(--color-cyan-1270, #0C2B2FB2);
+
+    }
+
+
+}
