@@ -5,10 +5,10 @@ const Header=()=>{
 
         return (
             <ul className="navbar-list-items">
-                        <li className="nav-item"><a className="nav-link" >Features</a></li>
-                        <li className="nav-item"><a  className="nav-link" >Why Us</a></li>
-                        <li className="nav-item"><a  className="nav-link">Tokenomics</a></li>
-                        <li><a  className="nav-link" >Roadmap</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#featureId" >Features</a></li>
+                        <li className="nav-item"><a  className="nav-link" href="#whyUsId" >Why Us</a></li>
+                        <li className="nav-item"><a  className="nav-link" href="#tokenomicsId">Tokenomics</a></li>
+                        <li><a  className="nav-link" href="#roadmapId" >Roadmap</a></li>
                     </ul>
         )
 
@@ -27,7 +27,7 @@ const Header=()=>{
                     <button className="btn-login">Log In</button>
                     <button className="btn-whitepaper">Whitepaper</button>
                 </div>
-                <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047714/new/buzrpxbavxehhp5ithpn.png" className="" alt="" />
+                <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047714/new/buzrpxbavxehhp5ithpn.png" className="menu-bar" alt="menu" />
                
             </header>
 
