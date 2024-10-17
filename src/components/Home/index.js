@@ -1,8 +1,17 @@
 
+import { useInView } from "react-intersection-observer";
 import Header from "../Header"
 import "./index.css"
 
 const Home=()=>{
+    const { ref:myRef, inView:myElementIsView } = useInView();
+    const { ref:bottomRef,inView:viewBottomToTop } = useInView();
+    const { ref:tokenoRef, inView:tokenomview } = useInView();
+    const { ref:tokenText, inView:tokenTextView } = useInView();
+    const { ref:phase1Top, inView:phase1ViewFromTop } = useInView();
+    const { ref:phase1Bottom, inView:phase1ViewBottom}=useInView();
+    const {ref:phase3Left, inView:phase3ViewFromLeft}=useInView();
+    const {ref:phase3Right, inView:phase3ViewFromRight}=useInView();
 
     return (
         <div className="bg-home-container">
@@ -36,7 +45,7 @@ const Home=()=>{
                         </div>           
                      </div>
                 </div> 
-            <div className="our-feature-top-container" id="featureId">
+            <div  ref={myRef} className={`our-feature-top-container ${myElementIsView?"animationTopBottomText":""}`} id="featureId">
                             <div className="our-features-container">
                                 <h1 className="our-feature-title">Our Features</h1>
                                 <div className="feature-card-container">
@@ -62,7 +71,7 @@ const Home=()=>{
                                         </p>
                                     </div>
                                     <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047066/new/k1juq7vu32iu09rmhf0u.png" className="markrt-insights-img" alt="markrt insights"/>
-                                    <img src="" className="" alt="" />
+                                    
                             </div>
                             <div className="empty-container-lg">
                                 {/* empty container */}
@@ -110,7 +119,7 @@ const Home=()=>{
                             </div>
                 
             </div>    
-            <div className="about-top-container" id="whyUsId">
+            <div  ref={bottomRef} className= {`about-top-container ${viewBottomToTop?"animationBottomToTopText":""}`} id="whyUsId">
                 <div className="about-ethai-container">
                   
                     <h1 className="about-ethai-title">
@@ -173,15 +182,13 @@ const Home=()=>{
               
                     </div>   
                    
-
-            
             <div className="about-top-container" id="tokenomicsId"> 
                     <h1 className="tokenomics-title">
                     Tokenomics
                     </h1>
                     <div className="tokenomics-card-container">
-                        <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729079019/new/zcmayvgveh6fehrpqxjt.png" className="tokenomics-img" alt="tokenomics" />
-                        <div>
+                        <img ref={tokenoRef}  src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729079019/new/zcmayvgveh6fehrpqxjt.png" className={` tokenomics-img ${tokenomview? "tokenomicsAnimation":""}`} alt="tokenomics" />
+                        <div ref={tokenText} className={`${tokenTextView?"tokenomicsTextAnimation":""}`}>
                         <ul className="tokenomics-card-description">
                                     <li className="key-value-container">
                                         <span className="key">
@@ -290,7 +297,7 @@ const Home=()=>{
 
                 <h1 className="about-ethai-title">Roadmap</h1>
                 <div className="phase-1-container">
-                    <div>
+                    <div ref={phase1Top} className={`${phase1ViewFromTop?"animationTopBottomText":""}`}>
                     <div className="phase-1">
                     PHASE 1
                     </div>
@@ -316,7 +323,7 @@ const Home=()=>{
                         </li>
                     </ul>
                     </div>
-                    <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047075/new/eidvqmn0eolbyoftpbbz.png" className="phase-bottom-img" alt="img" />
+                    <img ref={phase1Bottom} src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047075/new/eidvqmn0eolbyoftpbbz.png" className={`phase-bottom-img ${ phase1ViewBottom?"animationBottomToTopText":""}`} alt="img" />
                  
                 </div>
 
@@ -354,7 +361,7 @@ const Home=()=>{
 
                 
                 <div className="phase-1-container">
-                    <div>
+                    <div ref={phase3Left} className={`${phase3ViewFromLeft?"tokenomicsAnimation":""}`}>
                     <div className="phase-1">
                     PHASE 3
                     </div>
@@ -381,7 +388,7 @@ const Home=()=>{
                     </ul>
                     </div>
                    
-                    <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047073/new/v9gqktdvxlfyzjuqig8c.png" className="phase-bottom-img" alt="img" />
+                    <img src="https://res.cloudinary.com/dzcpsxjuv/image/upload/v1729047073/new/v9gqktdvxlfyzjuqig8c.png" ref={phase3Right} className={`phase-bottom-img ${phase3ViewFromRight?"tokenomicsTextAnimation":""}`} alt="img" />
                    
                 </div>
 

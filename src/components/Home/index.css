@@ -963,4 +963,78 @@ height:182px;
         
 
     }
+    .input-container{
+        display: block;
+    }
+}
+
+.animationTopBottomText{
+    animation: toBottom 1s;
+}
+@keyframes toBottom {
+
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0%);
+
+    }
+
+}
+
+.animationBottomToTopText{
+    animation: fromTop 1s;
+}
+
+
+@keyframes fromTop {
+
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0%);
+
+    }
+
+}
+
+.tokenomicsAnimation{
+    animation: tokenomic 1s ease-in;
+   
+}
+
+@keyframes tokenomic {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }   
+}
+
+.tokenomicsTextAnimation{
+    animation: tokenomicsText 1s ease-in;
+}
+
+@keyframes tokenomicsText {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
